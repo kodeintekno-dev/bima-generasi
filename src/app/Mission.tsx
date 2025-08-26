@@ -5,10 +5,10 @@ export default function Mission() {
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0f62a0]">
+        <h1 className="text-center sm:text-left text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0f62a0]">
           Visi Dan Misi
         </h1>
-        <p className="max-w-md text-base sm:text-lg text-gray-700">
+        <p className="text-center sm:tex-right max-w-md text-base sm:text-lg text-gray-700">
           Visi dan Misi kami agar semua program yang kami buat berjalan dengan
           sempurna
         </p>
