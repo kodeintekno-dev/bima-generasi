@@ -1,4 +1,5 @@
 // import Navbar from "@/components/Navbar";
+import { Kurikulum } from "./Kurikulum";
 import Mission from "./Mission";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       {/* <Navbar /> */}
       <Mission />
+      <Kurikulum />
     </>
   );
 }
