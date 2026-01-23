@@ -3,21 +3,21 @@ export default function Program() {
     {
       letter: "A",
       bgColor: "#FF0000",
-      title: "Home Schooling",
+      title: "PAKET A",
       description:
         "Belajar dirumah dengan Bimbingan orang tua dan tutor Kunjungan terdaftar di Dapodik dan mengikuti Kurikulum Merdeka yang dikembangkan oleh lembaga dan tetap mengembangkan pemberdayaan dalam mewujudkan Projek Penguatan profil Pelajar Pancasila",
     },
     {
       letter: "B",
       bgColor: "#003D6E",
-      title: "Home Schooling",
+      title: "PAKET B",
       description:
         "Belajar dirumah dengan Bimbingan orang tua dan tutor Kunjungan terdaftar di Dapodik dan mengikuti Kurikulum Merdeka yang dikembangkan oleh lembaga dan tetap mengembangkan pemberdayaan dalam mewujudkan Projek Penguatan profil Pelajar Pancasila",
     },
     {
       letter: "C",
       bgColor: "#808080",
-      title: "Home Schooling",
+      title: "PAKET C",
       description:
         "Belajar dirumah dengan Bimbingan orang tua dan tutor Kunjungan terdaftar di Dapodik dan mengikuti Kurikulum Merdeka yang dikembangkan oleh lembaga dan tetap mengembangkan pemberdayaan dalam mewujudkan Projek Penguatan profil Pelajar Pancasila",
     },
@@ -57,7 +57,7 @@ export default function Program() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#024A71] mb-4 flex items-center justify-center">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 flex items-center justify-center" style={{ color: card.bgColor }}>
                 {card.title}
               </h3>
 

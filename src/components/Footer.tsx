@@ -100,33 +100,33 @@ export default function Footer() {
 
             {/* social media */}
             <div className="flex gap-4">
-              <a
-                href="https://instagram.com/yourusername"
+             <a
+                href="https://www.instagram.com/pkbmbinagenerasi/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={Instagram} alt="Instagram" width={28} height={28} />
+                <Image src={Instagram} alt="Instagram" width={36} height={36} />
               </a>
               <a
-                href="https://tiktok.com/@yourusername"
+                href="https://tiktok.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={Tiktok} alt="Tiktok" width={28} height={28} />
+                <Image src={Tiktok} alt="Tiktok" width={36} height={36} />
               </a>
               <a
-                href="https://youtube.com/@yourusername"
+                href="https://www.youtube.com/@PKBMBinaGenerasi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={Youtube} alt="Youtube" width={28} height={28} />
+                <Image src={Youtube} alt="Youtube" width={36} height={36} />
               </a>
               <a
-                href="https://facebook.com/yourusername"
+                href="https://www.facebook.com/PKBMBinaPrestasi/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={Facebook} alt="Facebook" width={28} height={28} />
+                <Image src={Facebook} alt="Facebook" width={36} height={36} />
               </a>
             </div>
           </div>
