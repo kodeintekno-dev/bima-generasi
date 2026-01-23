@@ -21,7 +21,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row gap-10 md:gap-0 md:w-1/3 items-center md:items-start justify-center md:justify-between">
           {/* section */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4"> 
             <h6 className="text-white text-xl font-medium text-center">Sections</h6>
             <div className="flex flex-col gap-2 text-sm md:text-base">
               {[
