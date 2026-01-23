@@ -3,7 +3,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="bg-[#024A71] py-24">
+    <section className="bg-[#024A71] py-12 lg:py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-7 md:gap-14 lg:gap-28 px-6 md:px-0">
         {/* Left */}
         <div className="text-white sm:px-5 md:px-0 md:w-1/2">

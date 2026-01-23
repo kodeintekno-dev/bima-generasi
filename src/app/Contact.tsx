@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className=" py-24">
+    <div className="py-12 lg:py-16 mb-8">
       <div className="container mx-auto px-6">
         {/* Title */}
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#024A71] mb-12">
@@ -17,7 +17,7 @@ export default function Contact() {
         </h2>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Map */}
           <div className="w-full">
             <iframe
