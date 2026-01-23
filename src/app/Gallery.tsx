@@ -40,7 +40,6 @@ export default function Gallery() {
   return (
     <div className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
-        {/* Header */}
         <div className="flex justify-between items-start mb-12">
           <div>
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#024A71] ">Aktifitas Galeri</h2>
@@ -52,7 +51,6 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* Gallery Grid with Horizontal Scroll */}
         <div className="relative">
           <div 
             className="flex gap-4 overflow-x-auto pb-4 scroll-smooth"
@@ -84,7 +82,6 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="text-center mt-6">
           <p className="text-gray-500 text-sm">← Geser untuk melihat lebih banyak →</p>
         </div>

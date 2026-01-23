@@ -1,4 +1,3 @@
-
 import Hero from "./Hero";
 import About from "./About";
 import Footer from "@/components/Footer";
@@ -7,6 +6,7 @@ import VisionMission from "./Vision_Mission";
 import Program from "./Program";
 import Contact from "./Contact";
 import Gallery from "./Gallery";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   return (
@@ -17,8 +17,9 @@ export default function Home() {
       <VisionMission />
       <Program />
       <Gallery />
+      <Testimonials />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
   );
 }
