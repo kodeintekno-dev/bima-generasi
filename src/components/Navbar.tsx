@@ -36,7 +36,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/artikel"
+                  href="/article"
                   className="hover:text-sky-600 cursor-pointer"
                 >
                   Artikel

@@ -76,7 +76,7 @@ const ArticleSection: React.FC = () => {
                 ) : (
                   <>
                     Lihat Semua Artikel
-                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" /> 
                   </>
                 )}
               </button>
