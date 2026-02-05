@@ -13,35 +13,35 @@ export interface Article {
 export const articlesData: Article[] = [
   {
     id: 1,
-    title: "Pentingnya Pendidikan Karakter di Era Digital",
+    title: "Pentingnya Pendidikan",
     excerpt:
-      "Membangun karakter yang kuat sejak dini menjadi fondasi penting dalam menghadapi tantangan era digital yang penuh dengan informasi dan teknologi.",
-    author: "Amira Santoso",
+      "Membangun karakter yang kuat sejak dini menjadi fondasi penting dalam menghadapi tantangan era digital yang penuh dengan informasi dan teknologi.Seni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatifSeni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatifSeni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatif.",
+    author: "Abdullah Umair",
     date: "15 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Pendidikan",
   },
   {
     id: 2,
-    title: "Metode Pembelajaran Interaktif untuk Anak",
+    title: "Metode Pembelajaran bagus",
     excerpt:
-      "Pembelajaran yang interaktif dan menyenangkan mampu meningkatkan kreativitas serta daya tangkap anak dalam memahami materi pelajaran.",
-    author: "Budi Hartono",
+      "Pembelajaran yang sangat asik dan menyenangkan.",
+    author: "PKBM Bina Generasi",
     date: "12 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Metode Belajar",
   },
   {
     id: 3,
-    title: "Mengembangkan Kreativitas Anak Melalui Seni",
+    title: "Praktek lansung",
     excerpt:
-      "Seni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatif.",
-    author: "Siti Nurhaliza",
+      "praktek lansung ke lapangan",
+    author: "Abdullah Umair",
     date: "10 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Kreativitas",
   },
   {
@@ -49,21 +49,21 @@ export const articlesData: Article[] = [
     title: "Tips Membangun Kedisiplinan pada Anak",
     excerpt:
       "Disiplin adalah kunci kesuksesan di masa depan. Membangun kebiasaan baik sejak kecil akan membentuk karakter yang bertanggung jawab.",
-    author: "Ahmad Fauzi",
+    author: "Abdullah Umair",
     date: "8 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Parenting",
   },
   {
     id: 5,
-    title: "Peran Orang Tua dalam Pendidikan Anak",
+    title: "Tips Membangun Kedisiplinan pada Anak",
     excerpt:
-      "Kolaborasi antara sekolah dan orang tua sangat penting dalam mendukung perkembangan akademik dan karakter anak secara optimal.",
-    author: "Maya Puspita",
+      "Disiplin adalah kunci kesuksesan di masa depan. Membangun kebiasaan baik sejak kecil akan membentuk karakter yang bertanggung jawab.",
+    author: "orang baik",
     date: "5 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Parenting",
   },
   {
@@ -71,10 +71,10 @@ export const articlesData: Article[] = [
     title: "Teknologi dalam Pembelajaran Modern",
     excerpt:
       "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
-    author: "Rudi Setiawan",
+    author: "orang baik",
     date: "3 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Teknologi",
   },
   {
@@ -82,10 +82,10 @@ export const articlesData: Article[] = [
     title: "Teknologi dalam Pembelajaran Modern",
     excerpt:
       "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
-    author: "Rudi Setiawan",
+    author: "hamba allah",
     date: "3 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Teknologi",
   },
   {
@@ -93,10 +93,10 @@ export const articlesData: Article[] = [
     title: "Teknologi dalam Pembelajaran Modern",
     excerpt:
       "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
-    author: "Rudi Setiawan",
+    author: "linonel messi",
     date: "3 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Teknologi",
   },
   {
@@ -104,10 +104,10 @@ export const articlesData: Article[] = [
     title: "Teknologi dalam Pembelajaran Modern",
     excerpt:
       "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
-    author: "Rudi Setiawan",
+    author: "Cristiano Ronaldo",
     date: "3 Januari 2026",
     imageUrl:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
     category: "Teknologi",
   },
 ];

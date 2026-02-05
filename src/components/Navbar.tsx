@@ -9,10 +9,10 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center text-white font-bold">
-                W
+                BG
               </div>
               <span className="font-semibold text-sky-600 text-lg">
-                Wakwaw School
+                PKBM Bina Generasi
               </span>
             </Link>
 

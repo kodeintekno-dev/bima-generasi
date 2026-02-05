@@ -46,7 +46,7 @@ const ArticleSection: React.FC = () => {
             </h2>
             
             <p className="text-lg text-[#024A71]/80 max-w-2xl mx-auto leading-relaxed">
-              Temukan berbagai informasi dan tips menarik seputar pendidikan, parenting, dan perkembangan anak
+              Temukan berbagai informasi dan tips menarik seputar pendidikan, parenting, dan perkembangan anak dari PKBM Bina Generasi
             </p>
           </div>
 
