@@ -9,31 +9,31 @@ export default function Gallery() {
   const galleries = [
     {
       title: 'Ngaji',
-      image: 'https://i.pinimg.com/736x/a9/2a/23/a92a23ef51787fd9536a0995149144a0.jpg'
+      image: 'https://i.pinimg.com/1200x/0c/43/6c/0c436cf1acc8acd241e70ca734d54c2e.jpg'
     },
     {
       title: 'Belajar',
-      image: 'https://i.pinimg.com/736x/be/0d/98/be0d981b6c0e0eeca290dd6f0b96089b.jpg'
+      image: 'https://i.pinimg.com/1200x/45/f2/7a/45f27a78a49708cb6e49605d27323dfd.jpg'
     },
     {
       title: 'Olahraga',
-      image: 'https://i.pinimg.com/1200x/a5/42/18/a5421878aeafba9a5e93e0e0f934c2da.jpg'
+      image: 'https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg'
     },
     {
       title: 'kegiatan',
-      image: 'https://i.pinimg.com/1200x/5b/a3/a3/5ba3a3cdfb97c5257f9fc2244486f1ef.jpg'
+      image: 'https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg'
     },
     {
       title: 'olimpiade tingkat nasional',
-      image: 'https://i.pinimg.com/736x/01/61/6b/01616b7daa1d2ef8846022bffc253d68.jpg'
+      image: 'https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg'
     },
     {
       title: 'test 1',
-      image: 'https://i.pinimg.com/1200x/d4/65/c5/d465c59541afb9595f27bedaaaff03da.jpg'
+      image: 'https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg'
     },
     {
       title: 'test 323212312',
-      image: 'https://i.pinimg.com/736x/c1/ca/d1/c1cad18ed049c479da78aa17b535c115.jpg'
+      image: 'https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg'
     }
   ];
 

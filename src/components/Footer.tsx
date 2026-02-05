@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4 ">
             <h6 className="text-white text-xl font-medium">Pages</h6>
             <div className="flex flex-col gap-2 text-sm md:text-base">
-              {["Home", "Profile", "Program", "Gallery", "Contact"].map(
+              {["Home", "Artikel"].map(
                 (item) => (
                   <button
                     key={item}

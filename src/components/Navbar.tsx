@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full mt-4 z-50">
@@ -5,27 +7,53 @@ export default function Navbar() {
         <div className="px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center text-white font-bold">
                 W
               </div>
               <span className="font-semibold text-sky-600 text-lg">
                 Wakwaw School
               </span>
-            </div>
+            </Link>
 
             {/* Menu */}
             <ul className="hidden md:flex items-center gap-8 text-gray-600 font-medium">
-              <li className="hover:text-sky-600 cursor-pointer">Program</li>
-              <li className="hover:text-sky-600 cursor-pointer">Kurikulum</li>
-              <li className="hover:text-sky-600 cursor-pointer">Artikel</li>
-              <li className="hover:text-sky-600 cursor-pointer">Testimonial</li>
+              <li>
+                <Link
+                  href="#program"
+                  className="hover:text-sky-600 cursor-pointer"
+                >
+                  Program
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#kurikulum"
+                  className="hover:text-sky-600 cursor-pointer"
+                >
+                  Kurikulum
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/artikel"
+                  className="hover:text-sky-600 cursor-pointer"
+                >
+                  Artikel
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#testimonial"
+                  className="hover:text-sky-600 cursor-pointer"
+                >
+                  Testimonial
+                </Link>
+              </li>
             </ul>
 
             {/* Button */}
-            <button
-              className="bg-[#00A89F] hover:bg-[#00a8a0b4] text-white px-5 py-2 rounded-md font-medium transition"
-            >
+            <button className="bg-[#00A89F] hover:bg-[#00a8a0b4] text-white px-5 py-2 rounded-md font-medium transition">
               Daftar Sekarang
             </button>
           </div>
