@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
 
   return (
     <div className="bg-[#024A71] py-12 lg:py-16">
-      <div className="container mx-auto ">
+      <div className="container mx-auto px-6 md:px-0">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <MessageSquareQuote className="w-8 h-8 text-white" />
