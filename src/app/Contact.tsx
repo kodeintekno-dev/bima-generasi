@@ -9,11 +9,11 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="py-12 lg:py-16 mb-8">
+    <section id="kontak" className="py-12 lg:py-16 mb-8">
       <div className="container mx-auto px-6">
         {/* Title */}
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#024A71] mb-12">
-          Contact & Location
+          Kontak & Lokasi
         </h2>
 
         {/* Content Grid */}
@@ -113,6 +113,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

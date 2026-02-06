@@ -62,7 +62,7 @@ export default function Program() {
   };
 
   return (
-    <div className="py-12 lg:py-16">
+    <section id="program" className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div className="max-w-3xl">
@@ -131,6 +131,6 @@ export default function Program() {
         </div>
       </div>
 
-    </div>
+    </section>
   );
 }

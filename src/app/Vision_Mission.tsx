@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function VisiMisi() {
   return (
-    <section className="py-12 lg:py-16">
+    <section id="vision-mission" className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
 
         {/* Header */}

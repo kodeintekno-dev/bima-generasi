@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <main className="relative min-h-screen flex items-end justify-center overflow-hidden">
+    <main id="hero" className="relative min-h-screen flex items-end justify-center overflow-hidden">
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center "
         style={{

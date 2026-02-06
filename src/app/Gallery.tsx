@@ -45,7 +45,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="py-12 lg:py-16">
+    <section id="galeri" className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-start mb-12">
           <div className="max-w-md">
@@ -97,6 +97,6 @@ export default function Gallery() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -4,8 +4,19 @@ import Tiktok from "../../public/img/tiktok.png";
 import Youtube from "../../public/img/youtube.png";
 import Facebook from "../../public/img/facebook.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
+  const sections = [
+    { label: "Hero", id: "hero" },
+    { label: "Tentang Kami", id: "tentang-kami" },
+    { label: "Visi & Misi", id: "vision-mission " },
+    { label: "Program", id: "program" },
+    { label: "Kurikulum", id: "kurikulum" },
+    { label: "Galeri", id: "galeri" },
+    { label: "Testimoni", id: "testimoni" },
+    { label: "Kontak & Lokasi", id: "kontak" },
+  ];
   return (
     <footer className="bg-[#024A71]">
       {/* our information */}
@@ -20,42 +31,38 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-10 md:gap-0 md:w-1/3 items-center md:items-start justify-center md:justify-between">
-          {/* section */}
-          <div className="flex flex-col gap-4"> 
-            <h6 className="text-white text-xl font-medium text-center">Sections</h6>
+          <div className="flex flex-col text-center gap-4">
+            <h6 className="text-white text-xl font-medium">Sections</h6>
             <div className="flex flex-col gap-2 text-sm md:text-base">
-              {[
-                "Hero",
-                "About Us",
-                "Featured Program",
-                "Gallery Activity",
-                "Testimonials",
-                "Contact & Location",
-              ].map((item) => (
-                <button
-                  key={item}
+              {sections.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
                   className="text-white/75 hover:text-white transition-colors duration-200"
                 >
-                  {item}
-                </button>
+                  {item.label}
+                </a>
               ))}
             </div>
           </div>
 
           {/* pages */}
-          <div className="flex flex-col gap-4 ">
+          <div className="flex flex-col gap-4 text-center">
             <h6 className="text-white text-xl font-medium">Pages</h6>
             <div className="flex flex-col gap-2 text-sm md:text-base">
-              {["Home", "Artikel"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    className="text-white/75 hover:text-white transition-colors duration-200"
-                  >
-                    {item}
-                  </button>
-                )
-              )}
+              <Link
+                href="/"
+                className="text-white/75 hover:text-white transition-colors duration-200"
+              >
+                Beranda
+              </Link>
+
+              <Link
+                href="/article"
+                className="text-white/75 hover:text-white transition-colors duration-200"
+              >
+                Artikel
+              </Link>
             </div>
           </div>
         </div>
@@ -100,7 +107,7 @@ export default function Footer() {
 
             {/* social media */}
             <div className="flex gap-4">
-             <a
+              <a
                 href="https://www.instagram.com/pkbmbinagenerasi/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,7 +115,7 @@ export default function Footer() {
                 <Image src={Instagram} alt="Instagram" width={36} height={36} />
               </a>
               <a
-                href="https://tiktok.com/"
+                href="https://www.tiktok.com/@pkbm.bina.generasi"
                 target="_blank"
                 rel="noopener noreferrer"
               >

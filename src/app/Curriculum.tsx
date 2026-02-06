@@ -24,7 +24,7 @@ export default function Curriculum() {
   ];
 
   return (
-    <div className="py-12 lg:py-16">
+    <section id="kurikulum" className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>
@@ -72,6 +72,6 @@ export default function Curriculum() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
