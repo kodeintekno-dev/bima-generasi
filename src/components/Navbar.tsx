@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,12 +35,13 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center text-white font-bold">
-                BG
-              </div>
-              <span className="font-semibold text-sky-600 text-lg">
-                PKBM Bina Generasi
-              </span>
+              <Image
+                src="/img/logo.png"
+                alt="Logo PKBM BIMA"
+                width={40}
+                height={20}
+                className="object-contain"
+              />
             </Link>
 
             {/* Desktop Menu */}

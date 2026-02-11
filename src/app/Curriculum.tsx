@@ -5,21 +5,21 @@ export default function Curriculum() {
       bgColor: "#FF0000",
       title: "PAKET A",
       description:
-        "Belajar dirumah dengan Bimbingan orang tua dan tutor Kunjungan terdaftar di Dapodik dan mengikuti Kurikulum Merdeka yang dikembangkan oleh lembaga dan tetap mengembangkan pemberdayaan dalam mewujudkan Projek Penguatan profil Pelajar Pancasila",
+        "Paket A merupakan jenjang pertama dalam program Kesetaraan dan setara dengan pendidikan dasar (SD). Dalam program ini, peserta akan belajar materi-materi yang sejalan dengan kurikulum pendidikan nasional untuk SD. Materi pelajaran mencakup berbagai mata pelajaran penting seperti Matematika, Bahasa Indonesia, Ilmu Pengetahuan Alam, dan lain sebagainya. Setiap mata pelajaran dirancang untuk membantu peserta memahami konsep dasar dan membangun fondasi pendidikan yang kokoh.",
     },
     {
       letter: "B",
       bgColor: "#003D6E",
       title: "PAKET B",
       description:
-        "Belajar dirumah dengan Bimbingan orang tua dan tutor Kunjungan terdaftar di Dapodik dan mengikuti Kurikulum Merdeka yang dikembangkan oleh lembaga dan tetap mengembangkan pemberdayaan dalam mewujudkan Projek Penguatan profil Pelajar Pancasila",
+        "Paket B merupakan jenjang kedua dalam program Kesetaraan dan setara dengan pendidikan menengah pertama (SMP). Dalam program ini, peserta akan belajar materi-materi yang sejalan dengan kurikulum pendidikan nasional untuk SMP. Materi pelajaran mencakup berbagai mata pelajaran penting seperti Matematika, Bahasa Indonesia, Ilmu Pengetahuan Alam, Bahasa Inggris, dan lain sebagainya. Setiap mata pelajaran dirancang untuk memperdalam pengetahuan dan keterampilan peserta.",
     },
     {
       letter: "C",
       bgColor: "#808080",
       title: "PAKET C",
       description:
-        "Belajar dirumah dengan Bimbingan orang tua dan tutor Kunjungan terdaftar di Dapodik dan mengikuti Kurikulum Merdeka yang dikembangkan oleh lembaga dan tetap mengembangkan pemberdayaan dalam mewujudkan Projek Penguatan profil Pelajar Pancasila",
+        "Paket C adalah jenjang tertinggi dalam program Kesetaraan dan setara dengan pendidikan menengah atas (SMA). Dalam program ini, peserta akan belajar materi-materi yang sejalan dengan kurikulum pendidikan nasional untuk SMA. Mata pelajaran yang diajarkan mencakup berbagai bidang seperti Matematika, Bahasa Indonesia, Bahasa Inggris, Ilmu Pengetahuan Alam, Ilmu Pengetahuan Sosial, dan lain sebagainya. Setiap mata pelajaran dirancang untuk memberikan pemahaman mendalam dalam bidangnya.",
     },
   ];
 
@@ -34,7 +34,7 @@ export default function Curriculum() {
           </div>
           <div className="max-w-3xl">
             <p className="text-gray-700 text-base md:text-xl leading-relaxed">
-              Gambaran singkat program belajar yang membentuk karakter,
+              Gambaran singkat kurikulum belajar yang membentuk karakter,
               pengetahuan, dan keterampilan siswa.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Curriculum() {
               </h3>
 
               {/* Description */}
-              <p className=" leading-relaxed text-gray-600 text-sm md:text-base">
+              <p className=" leading-relaxed text-gray-600 text-sm md:text-base text-justify">
                 {card.description}
               </p>
             </div>

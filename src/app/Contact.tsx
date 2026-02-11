@@ -39,7 +39,7 @@ export default function Contact() {
                 <MapPin className="text-red-500 text-2xl" />
                 <div>
                   <p className="text-gray-700 leading-relaxed">
-                    1971 University Blvd, Lynchburg, VA 24515, United States
+                    Haurgajrug, Kec. Cipanas, Kabupaten Lebak, Banten 42372
                   </p>
                 </div>
               </div>

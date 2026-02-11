@@ -10,30 +10,34 @@ export default function About() {
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-6">
             Tentang Kami
           </h2>
-          <p className="text-base md:text-xl font-light leading-relaxed">
-            At Wakwaw School, we believe that education should be an inspiring
-            and empowering experience. The moment you step through our doors,
-            you’ll sense something different – a vibrant atmosphere filled with
-            energy, respect, and belonging. Our dedicated team of educators,
-            leaders, and staff work hand in hand to create an environment where
-            every student feels seen, supported, and motivated to reach their
-            full potential. At Wakwaw School, learning goes beyond the classroom
-            – it becomes a life-shaping adventure. We don’t just teach; we
-            nurture dreams and shape futures. <br />
-            <strong>Amira Santoso, M.Ed. Head of School</strong>
-          </p>
+          <div className="text-base md:text-xl font-light leading-relaxed gap-3 flex flex-col">
+            <p>
+              Pusat kegiatan belajar masyarakat (PKBM) Bina Generasi yang
+              berlokasi di Jl. Raya Cipanas Haurgajrug Kab. Lebak, Banten
+              merupakan lembaga pendidikan non formal yang bertujuan
+              mencerdaskan masyarakat sasarannya adalah warga yang putus sekolah
+              dan siswa terkena Drop Out.
+            </p>
+            <p>
+              “Alhamdulilah, PKBM yang kami kelola sudah sudan berdikari
+              sendiri, kiprah kami dalam mencerdaskan kehidupan masyarakat
+              sampai sekarang telah meluluskan banyak warga belajar, sehingga
+              memiliki ijasah paket A setara SD, paket B setara SMP, dan paket C
+              setara dengan SMA, ungkapnya, Rabu (12/09/2023).
+            </p>
+            <p className="font-semibold">Ketua Pengelola PKBM Bina Generasi Arif Rohman Hakim, S.M</p>
+          </div>
         </div>
 
         {/* Right */}
         <div className="md:w-1/2">
           <img
-            src="/img/about.png"
+            src="/img/about.jpg"
             alt="Tentang Kami"
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
       </div>
     </section>
-    
   );
 }

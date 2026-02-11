@@ -9,38 +9,27 @@ export default function Gallery() {
   const galleries = [
     {
       title: "Ngaji",
-      image:
-        "https://i.pinimg.com/1200x/0c/43/6c/0c436cf1acc8acd241e70ca734d54c2e.jpg",
+      image: "/gallery/1.png",
     },
     {
       title: "Belajar",
-      image:
-        "https://i.pinimg.com/1200x/45/f2/7a/45f27a78a49708cb6e49605d27323dfd.jpg",
+      image: "/gallery/2.png",
     },
     {
       title: "Olahraga",
-      image:
-        "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
+      image: "/gallery/3.png",
     },
     {
-      title: "kegiatan",
-      image:
-        "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
+      title: "Kegiatan",
+      image: "/gallery/4.png",
     },
     {
-      title: "olimpiade tingkat nasional",
-      image:
-        "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
+      title: "Olimpiade Tingkat Nasional",
+      image: "/gallery/5.png",
     },
     {
-      title: "test 1",
-      image:
-        "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    },
-    {
-      title: "test 323212312",
-      image:
-        "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
+      title: "Test 1",
+      image: "/gallery/6.png",
     },
   ];
 
