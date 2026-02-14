@@ -4,21 +4,17 @@ export default function VisiMisi() {
   return (
     <section id="vision-mission" className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
-
-        {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#024A71]">
             Visi Dan Misi
           </h2>
-          <p className="text-gray-600 text-base md:text-xl max-w-md mt-4 md:mt-0">
-            Visi dan Misi kami agar semua program yang kami buat berjalan
-            dengan sempurna
+          <p className="text-gray-600 text-base md:text-xl max-w-md ">
+            Visi dan Misi kami agar semua program yang kami buat berjalan dengan
+            sempurna
           </p>
         </div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
           {/* Visi */}
           <div className="bg-[#DFF2FE] rounded-xl px-10 py-12 flex flex-col items-center justify-center text-center">
             <div className="w-12 h-12 rounded-full bg-[#024A71] flex items-center justify-center mb-4">
@@ -30,8 +26,8 @@ export default function VisiMisi() {
             </h3>
 
             <p className="text-gray-600 text-sm md:text-base max-w-sm">
-              Integer imperdiet nulla non urna volutpat, at aliquam felis
-              porttitor.
+              Menjangkau Yg belum terjangkau melayani yg belum terlayani belajar
+              bisa siapasaja dimanasaja & kapansaja.
             </p>
           </div>
 
@@ -53,10 +49,12 @@ export default function VisiMisi() {
                 membentuk pribadi yang beriman dan berakhlak mulia.
               </li>
               <li>
-                Menyelenggarakan pembelajaran berkualitas untuk kreativitas dan literasi.
+                Menyelenggarakan pembelajaran berkualitas untuk kreativitas dan
+                literasi.
               </li>
               <li>
-                Menanamkan sikap kerja keras, pantang menyerah, dan percaya diri.
+                Menanamkan sikap kerja keras, pantang menyerah, dan percaya
+                diri.
               </li>
               <li>
                 Mengembangkan toleransi, tolong menolong, dan gotong royong.
@@ -64,12 +62,9 @@ export default function VisiMisi() {
               <li>
                 Menyediakan pendidikan dan tenaga kependidikan sesuai kebutuhan.
               </li>
-              <li>
-                Menjalin kemitraan dengan berbagai instansi.
-              </li>
+              <li>Menjalin kemitraan dengan berbagai instansi.</li>
             </ol>
           </div>
-
         </div>
       </div>
     </section>

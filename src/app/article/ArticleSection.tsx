@@ -1,27 +1,66 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { BookOpen, ArrowRight, ArrowLeft } from 'lucide-react';
-import ArticleCard from './ArticleCard';
-import ArticleModal from './ArticleModal';
-import { articlesData, Article } from '../article/data/articles';
+import React, { useState, useMemo } from "react";
+import { BookOpen, ArrowRight, ArrowLeft } from "lucide-react";
+import ArticleCard from "./ArticleCard";
+import ArticleModal from "./ArticleModal";
+import { articlesData, Article } from "../article/data/articles";
 
 const ArticleSection: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
 
+  const parseIndonesianDate = (dateStr: string): Date => {
+    const months: { [key: string]: number } = {
+      Januari: 0,
+      Februari: 1,
+      Maret: 2,
+      April: 3,
+      Mei: 4,
+      Juni: 5,
+      Juli: 6,
+      Agustus: 7,
+      September: 8,
+      Oktober: 9,
+      November: 10,
+      Desember: 11,
+    };
+
+    const cleaned = dateStr.replace(/^[a-zA-Z]+,\s*/, "");
+    const parts = cleaned.trim().split(" ");
+
+    if (parts.length >= 3) {
+      const day = parseInt(parts[0]);
+      const month = months[parts[1]] ?? 0;
+      const year = parseInt(parts[2]);
+      return new Date(year, month, day);
+    }
+
+    return new Date();
+  };
+
+  const sortedArticles = useMemo(() => {
+    return [...articlesData].sort((a, b) => {
+      const dateA = parseIndonesianDate(a.date);
+      const dateB = parseIndonesianDate(b.date);
+      return dateB.getTime() - dateA.getTime();
+    });
+  }, []);
+
   // Responsive limits
   const getArticleLimit = () => {
-    if (typeof window === 'undefined') return 6;
-    
+    if (typeof window === "undefined") return 6;
+
     const width = window.innerWidth;
-    if (width < 768) return 3; // Mobile
-    if (width < 1024) return 4; // Tablet
-    return 6; // Desktop
+    if (width < 768) return 3;
+    if (width < 1024) return 4;
+    return 6;
   };
 
   const [limit] = useState(getArticleLimit);
-  const displayedArticles = showAll ? articlesData : articlesData.slice(0, limit);
+  const displayedArticles = showAll
+    ? sortedArticles
+    : sortedArticles.slice(0, limit);
 
   const handleReadMore = (article: Article) => {
     setSelectedArticle(article);
@@ -35,48 +74,52 @@ const ArticleSection: React.FC = () => {
     <>
       <section className="bg-[#F0F9FF] py-20 px-5 md:px-0 pt-32">
         <div className="container mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-[#024A71] rounded-full mb-6">
               <BookOpen size={32} className="text-[#F0F9FF]" />
             </div>
-            
+
             <h2 className="text-4xl md:text-5xl font-bold text-[#024A71] mb-4">
               Artikel Terbaru
             </h2>
-            
+
             <p className="text-lg text-[#024A71]/80 max-w-2xl mx-auto leading-relaxed">
-              Temukan berbagai informasi dan tips menarik seputar pendidikan, parenting, dan perkembangan anak dari PKBM Bina Generasi
+              Temukan berbagai informasi dan tips menarik seputar pendidikan,
+              parenting, dan perkembangan anak dari PKBM Bina Generasi
             </p>
           </div>
 
-          {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {displayedArticles.map((article) => (
-              <ArticleCard 
-                key={article.id} 
+              <ArticleCard
+                key={article.id}
                 article={article}
                 onReadMore={handleReadMore}
               />
             ))}
           </div>
 
-          {/* Toggle Button */}
-          {articlesData.length > limit && (
+          {sortedArticles.length > limit && (
             <div className="text-center">
-              <button 
+              <button
                 onClick={() => setShowAll(!showAll)}
                 className="inline-flex items-center gap-3 bg-[#024A71] text-[#F0F9FF] px-10 py-4 rounded-full font-semibold text-base shadow-lg hover:shadow-xl hover:bg-[#035d8a] hover:-translate-y-1 transition-all duration-300 group"
               >
                 {showAll ? (
                   <>
-                    <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                    <ArrowLeft
+                      size={20}
+                      className="group-hover:-translate-x-1 transition-transform"
+                    />
                     Lihat Lebih Sedikit
                   </>
                 ) : (
                   <>
                     Lihat Semua Artikel
-                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" /> 
+                    <ArrowRight
+                      size={20}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
                   </>
                 )}
               </button>
@@ -85,7 +128,6 @@ const ArticleSection: React.FC = () => {
         </div>
       </section>
 
-      {/* Article Detail Modal */}
       {selectedArticle && (
         <ArticleModal article={selectedArticle} onClose={handleCloseModal} />
       )}

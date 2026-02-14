@@ -36,7 +36,7 @@ export default function Gallery() {
   return (
     <section id="galeri" className="py-12 lg:py-16">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-start mb-12">
+        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between mb-12">
           <div className="max-w-md">
             <p className="text-gray-700 text-base md:text-xl leading-relaxed">
               Gallery kegiatan-kegiatan PKBM Bina Generasi.

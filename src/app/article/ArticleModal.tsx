@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import React, { useEffect } from "react";
-import { X, Calendar, User, Clock } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { X, Calendar, User } from "lucide-react";
 import { Article } from "../article/data/articles";
 
 interface ArticleModalProps {
@@ -11,7 +11,11 @@ interface ArticleModalProps {
 }
 
 const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) => {
-  // Prevent body scroll when modal is open
+  const [MDXContent, setMDXContent] = useState<React.ComponentType | null>(
+    null,
+  );
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
@@ -19,7 +23,6 @@ const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) => {
     };
   }, []);
 
-  // Close modal on ESC key
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -27,6 +30,20 @@ const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) => {
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
   }, [onClose]);
+
+  useEffect(() => {
+    setLoading(true);
+    setMDXContent(null);
+
+    import(`../article/content/${article.slug}.mdx`)
+      .then((mod) => {
+        setMDXContent(() => mod.default);
+        setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+      });
+  }, [article.slug]);
 
   return (
     <div
@@ -37,7 +54,7 @@ const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) => {
         className="bg-white rounded-2xl w-full max-w-3xl max-h-[85vh] overflow-y-auto shadow-2xl animate-fadeIn"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative h-96 overflow-hidden rounded-t-2xl">
+        <div className="relative h-72 md:h-96 overflow-hidden rounded-t-2xl">
           <img
             src={article.imageUrl}
             alt={article.title}
@@ -48,26 +65,23 @@ const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) => {
               {article.category}
             </span>
           </div>
-          <div className="absolute top-1 right-2">
+          <div className="absolute top-4 right-4">
             <button
               onClick={onClose}
-              className="sticky top-4 float-right mr-4 mt-4 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors z-10"
-              aria-label="Close modal"
+              className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors"
+              aria-label="Tutup modal"
             >
               <X size={24} className="text-[#024A71]" />
             </button>
           </div>
         </div>
 
-        {/* Content */}
-        <div className="p-8">
-          {/* Title */}
+        <div className="p-6 md:p-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#024A71] mb-4 leading-tight">
             {article.title}
           </h2>
 
-          {/* Meta Info */}
-          <div className="flex flex-wrap items-center gap-6 mb-6 pb-6 border-b border-[#024A71]/10">
+          <div className="flex flex-wrap items-center gap-6 mb-8 pb-6 border-b border-[#024A71]/10">
             <div className="flex items-center gap-2 text-[#024A71]/70">
               <User size={18} className="text-[#024A71]/60" />
               <span className="font-medium">{article.author}</span>
@@ -78,11 +92,21 @@ const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) => {
             </div>
           </div>
 
-          {/* Article Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-[#024A71]/80 text-lg leading-relaxed mb-6">
-              {article.excerpt}
-            </p>
+            {loading && (
+              <div className="flex items-center gap-3 text-[#024A71]/50">
+                <div className="w-5 h-5 border-2 border-[#024A71]/30 border-t-[#024A71] rounded-full animate-spin" />
+                <span>Memuat artikel...</span>
+              </div>
+            )}
+
+            {!loading && MDXContent && <MDXContent />}
+
+            {!loading && !MDXContent && (
+              <p className="text-[#024A71]/80 text-lg leading-relaxed">
+                {article.excerpt}
+              </p>
+            )}
           </div>
         </div>
       </div>

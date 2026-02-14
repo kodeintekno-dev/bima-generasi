@@ -7,107 +7,113 @@ export interface Article {
   date: string;
   imageUrl: string;
   category: string;
+  slug: string;
 }
 
-// Articles Data
 export const articlesData: Article[] = [
   {
     id: 1,
-    title: "Pentingnya Pendidikan",
+    slug: "bimtek-kurikulum-merdeka",
+    title:
+      "PKBM Bina Generasi Menghadiri Bimtek Implementasi Kurikulum Merdeka",
     excerpt:
-      "Membangun karakter yang kuat sejak dini menjadi fondasi penting dalam menghadapi tantangan era digital yang penuh dengan informasi dan teknologi.Seni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatifSeni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatifSeni bukan hanya tentang menggambar atau melukis, tetapi juga media untuk mengekspresikan imajinasi dan mengembangkan kemampuan berpikir kreatif.",
-    author: "Abdullah Umair",
-    date: "15 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Pendidikan",
+      "PKBM Bina Generasi menghadiri acara Bimbingan Teknis dan Implementasi Kurikulum Merdeka yang diselenggarakan oleh FKPKBM Kabupaten Lebak.",
+    author: "Arif Rohman Hakim, S.M",
+    date: "9 Februari 2024",
+    imageUrl: "/article/bimtek-kurikulum-merdeka.jpg",
+    category: "Berita",
   },
   {
     id: 2,
-    title: "Metode Pembelajaran bagus",
+    slug: "peringatan-isra-miraj",
+    title:
+      "PKBM Bina Generasi Peringati Isra Mi'raj Bersama Mitra Pondok Pesantren",
     excerpt:
-      "Pembelajaran yang sangat asik dan menyenangkan.",
-    author: "PKBM Bina Generasi",
-    date: "12 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Metode Belajar",
+      "PKBM Bina Generasi menggelar peringatan Isra Mi'raj Nabi Muhammad SAW yang melibatkan mitra pondok pesantren serta warga belajar dari berbagai jenjang pendidikan.",
+    author: "Firdaus",
+    date: "06 Februari 2026",
+    imageUrl: "/article/isra-miraj.jpg",
+    category: "Kegiatan",
   },
   {
     id: 3,
-    title: "Praktek lansung",
+    slug: "evaluasi-rutin-bulanan",
+    title:
+      "PKBM Bina Generasi Gelar Evaluasi Rutin Bulanan, Fokus Tingkatkan Mutu dan Pembelajaran Layanan Fleksibel",
     excerpt:
-      "praktek lansung ke lapangan",
-    author: "Abdullah Umair",
-    date: "10 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Kreativitas",
+      "PKBM Bina Generasi mengadakan evaluasi rutin bulanan sebagai upaya meningkatkan mutu dan kualitas layanan pendidikan nonformal dengan pendekatan pembelajaran yang fleksibel.",
+    author: "Firdaus",
+    date: "31 Januari 2026",
+    imageUrl: "/article/evaluasi-bulanan.png",
+    category: "Berita",
   },
   {
     id: 4,
-    title: "Tips Membangun Kedisiplinan pada Anak",
+    slug: "kelas-berbasis-pesantren",
+    title:
+      "Pembelajaran di PKBM Bina Generasi Terapkan Kelas Berbasis Pesantren dengan Sistem Tutor Visit",
     excerpt:
-      "Disiplin adalah kunci kesuksesan di masa depan. Membangun kebiasaan baik sejak kecil akan membentuk karakter yang bertanggung jawab.",
-    author: "Abdullah Umair",
-    date: "8 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Parenting",
+      "PKBM Bina Generasi mengembangkan program kelas berbasis pesantren dengan sistem kunjungan tutor bulanan yang terintegrasi dengan kegiatan kepesantrenan.",
+    author: "Yeyen",
+    date: "20 Oktober 2025",
+    imageUrl: "/article/kelas-berbasis-pesantren.jpg",
+    category: "Program",
   },
   {
     id: 5,
-    title: "Tips Membangun Kedisiplinan pada Anak",
+    slug: "cerdaskan-masyarakat-putus-sekolah",
+    title:
+      "PKBM Bina Generasi Turut Sumbang Cerdaskan Masyarakat Putus Sekolah",
     excerpt:
-      "Disiplin adalah kunci kesuksesan di masa depan. Membangun kebiasaan baik sejak kecil akan membentuk karakter yang bertanggung jawab.",
-    author: "orang baik",
-    date: "5 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Parenting",
+      "PKBM Bina Generasi bekerja sama dengan Pondok Pesantren Darul Ibtida dan Tokoh Pemuda melaksanakan pertemuan dalam rangka mengentaskan masyarakat putus sekolah.",
+    author: "Arif Rohman Hakim, S.M",
+    date: "11 Oktober 2023",
+    imageUrl: "/article/cerdaskan-masyarakat-putus-sekolah.jpg",
+    category: "Berita",
   },
   {
     id: 6,
-    title: "Teknologi dalam Pembelajaran Modern",
+    slug: "visitasi-akreditasi",
+    title: "Sebagai Refleksi, PKBM Bina Generasi Jalani Visitasi Akreditasi",
     excerpt:
-      "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
-    author: "orang baik",
-    date: "3 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Teknologi",
+      "PKBM Bina Generasi menjalani proses akreditasi oleh Badan Akreditasi Nasional sebagai bagian dari upaya peningkatan mutu pendidikan di lembaga masyarakat.",
+    author: "Muhamad Agus Salim",
+    date: "5 November 2025",
+    imageUrl: "/article/visitasi-akreditasi.png",
+    category: "Berita",
   },
   {
     id: 7,
-    title: "Teknologi dalam Pembelajaran Modern",
+    slug: "buka-akses-pendidikan-kesetaraan",
+    title:
+      "Tak Ada Alasan Putus Sekolah, PKBM Bina Generasi Buka Akses Pendidikan Kesetaraan",
     excerpt:
-      "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
-    author: "hamba allah",
-    date: "3 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
-    category: "Teknologi",
+      "PKBM Bina Generasi resmi membuka Sistem Penerimaan Murid Baru Tahun Ajaran 2026/2027 dengan program gratis untuk anak putus sekolah usia maksimal 21 tahun.",
+    author: "Redaksi",
+    date: "6 Januari 2026",
+    imageUrl: "/article/buka-akses-pendidikan-kesetaraan.jpeg",
+    category: "Pengumuman",
   },
   {
     id: 8,
+    slug: "teknologi-pembelajaran-modern-3",
     title: "Teknologi dalam Pembelajaran Modern",
     excerpt:
       "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
     author: "linonel messi",
     date: "3 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
+    imageUrl: "/gallery/2.png",
     category: "Teknologi",
   },
   {
     id: 9,
+    slug: "teknologi-pembelajaran-modern-4",
     title: "Teknologi dalam Pembelajaran Modern",
     excerpt:
       "Mengintegrasikan teknologi dalam pembelajaran membantu siswa lebih siap menghadapi tantangan dunia yang terus berkembang pesat.",
     author: "Cristiano Ronaldo",
     date: "3 Januari 2026",
-    imageUrl:
-      "https://i.pinimg.com/1200x/5e/f8/ea/5ef8eab6965d35d8f959731e7f1b0eee.jpg",
+    imageUrl: "/gallery/3.png",
     category: "Teknologi",
   },
 ];

@@ -15,8 +15,8 @@ export default function Hero() {
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % images.length);
         setFade(true);
-      }, 500);
-    }, 5000); 
+      }, 600);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -26,7 +26,6 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-end justify-center overflow-hidden"
     >
-      {/* Background Image */}
       <div
         className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-500 ${
           fade ? "opacity-100" : "opacity-0"
@@ -36,7 +35,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Gradient Overlay */}
       <div
         className="absolute inset-0 w-full h-full"
         style={{
@@ -45,7 +43,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mb-16">
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-wider">
           BERSAMA

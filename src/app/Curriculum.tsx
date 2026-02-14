@@ -40,7 +40,6 @@ export default function Curriculum() {
           </div>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <div key={index} className="bg-[#DFF2FE] rounded-lg p-8">
@@ -56,7 +55,6 @@ export default function Curriculum() {
                 </div>
               </div>
 
-              {/* Title */}
               <h3
                 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 flex items-center justify-center"
                 style={{ color: card.bgColor }}
@@ -64,7 +62,6 @@ export default function Curriculum() {
                 {card.title}
               </h3>
 
-              {/* Description */}
               <p className=" leading-relaxed text-gray-600 text-sm md:text-base text-justify">
                 {card.description}
               </p>
