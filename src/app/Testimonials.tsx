@@ -1,52 +1,52 @@
 "use client";
 
-import { useState } from "react";
-import { Play, X, MessageSquareQuote } from "lucide-react";
+  import { useState } from "react";
+  import { Play, X, MessageSquareQuote } from "lucide-react";
 
-export default function TestimonialsSection() {
-  const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
-  const [expandedCard, setExpandedCard] = useState<number | null>(null);
+  export default function TestimonialsSection() {
+    const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
+    const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
-  const testimonials = [
-    {
-      title: 'Abdul "Alumni PKBM BIMA GENERASI"',
-      videoId: "1VvEeZLsLjhmrw7OB7ganHhPnyyvtrr9P",
-      thumbnail: "/testimonials/1.png",
-    },
-    {
-      title: 'Abdul "Alumni PKBM BIMA GENERASI"',
-      videoId: "13kMsRZQzI7gnzBuU2xh6-9c9mqRtVNza",
-      thumbnail: "/testimonials/2.png",
-    },
-    {
-      title: 'Abdul "Alumni PKBM BIMA GENERASI"',
-      videoId: "13kMsRZQzI7gnzBuU2xh6-9c9mqRtVNza",
-      thumbnail: "/testimonials/3.png",
-    },
-    {
-      title: 'Abdul "Alumni PKBM BIMA GENERASI"',
-      videoId: "1X4F6AVK3__FilcYKE5dTdTQXVgA_TyNy",
-      thumbnail: "/testimonials/4.png",
-    },
-    {
-      title: 'Abdul "Alumni PKBM BIMA GENERASI"',
-      videoId: "1bFSIId1bkw5hXTknbX3hvkrBhnjMa7bi",
-      thumbnail: "/testimonials/5.png",
-    },
-  ];
+    const testimonials = [
+      {
+        title: 'Sarojah "Alumni Paket C PKBM BIMA GENERASI"',
+        videoId: "1MEl3uM8d22gsfe3JmOUhoSYgMFz4Lv4e",
+        thumbnail: "/testimonials/1.png",
+      },
+      {
+        title: 'Siswa-siswa yang telahh lulus',
+        videoId: "1E8Q8s3AltVmVl_HkXyoTboBm0Tpa45ac",
+        thumbnail: "/testimonials/2.png",
+      },
+      {
+        title: 'Mohammad Rizky "Alumni Paket C PKBM BIMA GENERASI"',
+        videoId: "1Kw2bow_gVOQzlOpBblsYYYeUegl8_EE1",
+        thumbnail: "/testimonials/3.png",
+      },
+      {
+        title: 'Abdul "Alumni PKBM BIMA GENERASI"',
+        videoId: "1PMtlk-Si5rvddncT6R00MMQ2VORsorEn",
+        thumbnail: "/testimonials/4.png",
+      },
+      {
+        title: 'Abdul "Alumni PKBM BIMA GENERASI"',
+        videoId: "1Hk4kxPHDCLiJ2rm4Sh5MUBOMvIaimVVN",
+        thumbnail: "/testimonials/5.png",
+      },
+    ];
 
-  const getEmbedUrl = (videoId: string) => {
-    return `https://drive.google.com/file/d/${videoId}/preview`;
-  };
+    const getEmbedUrl = (videoId: string) => {
+      return `https://drive.google.com/file/d/${videoId}/preview`;
+    };
 
   return (
-    <div className="bg-[#024A71] py-12 lg:py-16">
-      <div className="container mx-auto ">
+    <section id="testimoni" className="bg-[#024A71] py-12 lg:py-16">
+      <div className="container mx-auto px-6 md:px-0">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <MessageSquareQuote className="w-8 h-8 text-white" />
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
-              Testimonials
+              Testimoni
             </h2>
           </div>
         </div>
@@ -137,6 +137,6 @@ export default function TestimonialsSection() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
